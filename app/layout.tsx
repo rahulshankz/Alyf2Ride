@@ -3,6 +3,7 @@ import { Oswald, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { withBasePath } from "@/lib/basePath";
 import site from "@/data/site.json";
 
 const oswald = Oswald({
@@ -17,18 +18,6 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
-
-// Mirrors the basePath logic in next.config.js. Duplicated (not imported)
-// because next.config.js is CommonJS and this file is compiled as ESM —
-// icons.icon needs an absolute, basePath-prefixed path since (unlike
-// openGraph/twitter images) it isn't resolved against metadataBase.
-function getBasePath(): string {
-  if (process.env.GITHUB_ACTIONS === "true" && process.env.GITHUB_REPOSITORY) {
-    const repoName = process.env.GITHUB_REPOSITORY.split("/")[1];
-    if (!repoName.endsWith(".github.io")) return `/${repoName}`;
-  }
-  return "";
-}
 
 export const metadata: Metadata = {
   // Trailing slash matters: GitHub Pages serves this under /Alyf2Ride/, and
@@ -56,7 +45,7 @@ export const metadata: Metadata = {
     images: ["images/og-cover.jpg"],
   },
   icons: {
-    icon: `${getBasePath()}/favicon.svg`,
+    icon: withBasePath("/favicon.svg"),
   },
 };
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { withBasePath } from "@/lib/basePath";
 
 type HeroProps = {
   eyebrow?: string;
@@ -27,7 +28,7 @@ export default function Hero({
       }`}
     >
       <Image
-        src={imageSrc}
+        src={withBasePath(imageSrc)}
         alt={imageAlt}
         fill
         priority

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { withBasePath } from "@/lib/basePath";
 import site from "@/data/site.json";
 
 const NAV_LINKS = [
@@ -21,7 +22,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/images/logo.jpg"
+            src={withBasePath("/images/logo.jpg")}
             alt={`${site.name} logo`}
             width={40}
             height={40}

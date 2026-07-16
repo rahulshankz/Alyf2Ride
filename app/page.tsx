@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import RideCard from "@/components/RideCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { getUpcomingRides } from "@/lib/rides";
+import { withBasePath } from "@/lib/basePath";
 import site from "@/data/site.json";
 
 export default function HomePage() {
@@ -35,7 +36,7 @@ export default function HomePage() {
       <section className="section grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center">
         <div className="relative aspect-[4/5] w-full overflow-hidden bg-charcoal-lighter">
           <Image
-            src="/images/hero/group-story.jpg"
+            src={withBasePath("/images/hero/group-story.jpg")}
             alt="ALyf2Ride group photo after a ride"
             fill
             sizes="(min-width: 1024px) 40vw, 100vw"

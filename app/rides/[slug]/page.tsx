@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { getAllRides, getRideBySlug, formatDateRange } from "@/lib/rides";
+import { withBasePath } from "@/lib/basePath";
+import site from "@/data/site.json";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -24,7 +26,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: ride.title,
       description: ride.summary,
-      images: [{ url: ride.coverImage }],
+      // Absolute URL built from site.url directly (not metadataBase
+      // resolution) — a leading-slash path resolved against metadataBase
+      // drops the /Alyf2Ride basePath segment entirely.
+      images: [{ url: `${site.url}${ride.coverImage}` }],
     },
   };
 }
@@ -38,7 +43,7 @@ export default async function RideDetailPage({ params }: Props) {
     <>
       <section className="relative flex h-[70vh] min-h-[440px] items-end overflow-hidden">
         <Image
-          src={ride.coverImage}
+          src={withBasePath(ride.coverImage)}
           alt={ride.title}
           fill
           priority

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Ride } from "@/lib/rides";
 import { formatDateRange } from "@/lib/rides";
+import { withBasePath } from "@/lib/basePath";
 
 export default function RideCard({ ride }: { ride: Ride }) {
   return (
@@ -11,7 +12,7 @@ export default function RideCard({ ride }: { ride: Ride }) {
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-charcoal-lighter">
         <Image
-          src={ride.coverImage}
+          src={withBasePath(ride.coverImage)}
           alt={ride.title}
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"

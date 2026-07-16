@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { withBasePath } from "@/lib/basePath";
 
 const GALLERY_DIR = path.join(process.cwd(), "public/images/gallery");
 const VALID_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp"]);
@@ -33,7 +34,7 @@ export function getGalleryImages(): GalleryImage[] {
     .filter((file) => VALID_EXTENSIONS.has(path.extname(file).toLowerCase()))
     .sort()
     .map((file) => ({
-      src: `/images/gallery/${encodeURIComponent(file)}`,
+      src: withBasePath(`/images/gallery/${encodeURIComponent(file)}`),
       alt: toAltText(file),
     }));
 }

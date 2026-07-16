@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
+import { withBasePath } from "@/lib/basePath";
 import site from "@/data/site.json";
 
 export const metadata: Metadata = {
@@ -56,7 +57,7 @@ export default function AboutPage() {
 
         <div className="relative mx-auto mt-12 aspect-[16/9] w-full max-w-5xl overflow-hidden bg-charcoal-lighter">
           <Image
-            src="/images/hero/about-group.jpg"
+            src={withBasePath("/images/hero/about-group.jpg")}
             alt="ALyf2Ride group photo"
             fill
             sizes="(min-width: 1024px) 80vw, 100vw"
