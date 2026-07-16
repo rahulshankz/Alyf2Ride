@@ -18,7 +18,7 @@ const STEPS = [
   },
   {
     step: "02",
-    title: "Sign up for a ride and Join the WhatsApp group",
+    title: "Sign up for the ride and Join the WhatsApp group",
     detail:
       "Scroll down to see the Etiquettes — this is how we ride together, safely and respectfully. Non-negotiable for every member.",
   },
@@ -35,7 +35,7 @@ export default function JoinPage() {
     <>
       <Hero
         eyebrow="Join Us"
-        title="No Forms. Just Show Up."
+        title="Become a Part of the Community"
         subtitle="Here's exactly how to become part of the community and what we expect from every rider on the road."
         imageSrc="/images/hero/join-hero.jpg"
         imageAlt="Group of riders gathered before a ride start"
@@ -69,8 +69,10 @@ export default function JoinPage() {
           Riding Etiquette
         </h2>
         <p className="mt-4 max-w-2xl text-cream-dim">
-          These aren't suggestions — every rider who joins a group ride is
-          expected to follow them.
+          At {site.name}, every ride is about exploring new roads, sharing
+          experiences, and creating memories together. To keep our rides
+          safe, enjoyable, and memorable for everyone, we follow a few
+          simple principles.
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">

@@ -6,7 +6,7 @@ type WhatsAppButtonProps = {
 
 export default function WhatsAppButton({
   href,
-  label = "Join the ride on WhatsApp",
+  label = "Join the Community on WhatsApp",
   variant = "primary",
 }: WhatsAppButtonProps) {
   return (

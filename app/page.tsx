@@ -96,7 +96,7 @@ export default function HomePage() {
         ) : (
           <p className="text-cream-dim">
             No rides scheduled right now — check back soon or join the
-            WhatsApp group to hear first.
+            WhatsApp community to hear first.
           </p>
         )}
       </section>
@@ -108,8 +108,7 @@ export default function HomePage() {
           Your next ride starts with one message.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-cream-dim">
-          No membership fees, no forms. Join the WhatsApp group, introduce
-          yourself, and show up for the next one.
+          Join the WhatsApp community, respond to announcements, confirm your availability and show up for the ride.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <WhatsAppButton href={site.whatsapp.communityLink} />

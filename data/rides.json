@@ -9,18 +9,19 @@
     "meetPoint": "Thodupuzha",
     "meetTime": "05:00 AM",
     "difficulty": "Intermediate",
-    "distanceKm": 250,
-    "route": "Kochi → Idukki → Kochi ",
-    "summary": "Two days of misty ghat roads, waterfalls in full flow, and hairpins wrapped in cloud. Our signature monsoon run through the Western Ghats — bring your rain gear and your patience for slow, slippery corners.",
+    "distanceKm": 300,
+    "route": "Kochi → Thodupuzha → Mundakkayam → Kuttikanam → Vagamon → Kochi ",
+    "summary": "Two days of misty ghat roads, waterfalls in full flow, and hairpins wrapped in cloud. Our signature monsoon run through the Western Ghats — bring your rain gear and your patience for slow, slippery corners and some trail riding through the mud and puddles.",
     "highlights": [
       "Misty ghat roads",
-      "Rainy waterfalls in full flow"
+      "Rainy waterfalls in full flow",
+      "trail riding through the mud and puddles"
     ],
     "coverImage": "/images/rides/monsoon-ride-idukki-2026.jpg",
     "gallery": [],
-    "whatsappLink": "https://chat.whatsapp.com/your-invite-code-here",
-    "rsvpNote": "Limited to 20 riders. Riding gear (helmet, jacket, boots) mandatory. Confirm on the WhatsApp group by July 25.",
-    "priceNote": "Contribution: ₹2,500/rider (fuel toll + 1 night stay). Pillion welcome.",
+    "whatsappLink": "https://wa.me/918089213090",
+    "rsvpNote": "Limited to 20 riders. Riding gear (helmet, jacket, raincoat) mandatory. Confirm on the WhatsApp group by July 25.",
+    "priceNote": "Contribution: ₹2,000/rider (Fuel, Food not included). Pillion welcome.",
     "instagramHighlight": ""
   },
   {
@@ -33,8 +34,8 @@
     "meetPoint": "Guwahati",
     "meetTime": "",
     "difficulty": "Adventure",
-    "distanceKm": 1600,
-    "route": "Guwahati → Bomdila → Tawang → BumLa - Zeminthang - Jang - Mago - GokarLa → Tezpur → Guwahati",
+    "distanceKm": 1624,
+    "route": "Guwahati → Bomdila → Tawang → BumLa → Zeminthang → Jang → Mago → GokarLa → Tezpur → Guwahati",
     "summary": "",
     "highlights": [
       "Golden-hour switchbacks",
@@ -42,8 +43,15 @@
       "Early morning ride back with the group"
     ],
     "coverImage": "/images/rides/Tawang-2026.jpg",
-    "gallery": [],
-    "whatsappLink": "https://chat.whatsapp.com/your-invite-code-here",
+    "gallery": [
+      "/images/rides/tawang-2026-1.jpeg",
+      "/images/rides/tawang-2026-2.jpeg",
+      "/images/rides/tawang-2026-3.jpeg",
+      "/images/rides/tawang-2026-4.jpeg",
+      "/images/rides/tawang-2026-5.jpeg",
+      "/images/rides/tawang-2026-6.jpeg"
+    ],
+    "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
     "instagramHighlight": "https://www.instagram.com/stories/highlights/18133448719572209/"
@@ -68,7 +76,7 @@
     ],
     "coverImage": "/images/rides/sundowner-circuit-blore-edition.jpg",
     "gallery": [],
-    "whatsappLink": "https://chat.whatsapp.com/your-invite-code-here",
+    "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
     "instagramHighlight": ""
@@ -84,7 +92,7 @@
     "meetTime": "",
     "difficulty": "Adventure",
     "distanceKm": 1530,
-    "route": "Gorakhpur - Kathmandu - Pokhara - Marpha - Jomsom - Mukthinath - Pokhara - Gorakhpur",
+    "route": "Gorakhpur → Kathmandu → Pokhara → Marpha → Jomsom → Mukthinath → Pokhara → Gorakhpur",
     "summary": "A thrilling adventure through the rugged landscapes of Nepal and Mustang, exploring ancient monasteries, high-altitude lakes, and breathtaking mountain passes.",
     "highlights": [
       "Golden-hour switchbacks",
@@ -93,7 +101,7 @@
     ],
     "coverImage": "/images/rides/nepal.jpg",
     "gallery": [],
-    "whatsappLink": "https://chat.whatsapp.com/your-invite-code-here",
+    "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
     "instagramHighlight": "https://www.instagram.com/stories/highlights/18075788066471303/"
@@ -109,7 +117,7 @@
     "meetTime": " ",
     "difficulty": "Adventure",
     "distanceKm": 2933,
-    "route": "Chandigarh - Jispa - Padum - Leh - Pangong - Hanle - UmlingLa - Tso Moriri - Nyoma - Leh - Kargil - Srinagar - Chandigarh",
+    "route": "Chandigarh → Jispa → Padum → Leh → Pangong → Hanle → UmlingLa → Tso Moriri → Nyoma → Leh → Kargil → Srinagar → Chandigarh",
     "summary": "",
     "highlights": [
       "Golden-hour switchbacks",
@@ -118,7 +126,7 @@
     ],
     "coverImage": "/images/rides/ladakh.jpg",
     "gallery": [],
-    "whatsappLink": "https://chat.whatsapp.com/your-invite-code-here",
+    "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
     "instagramHighlight": ""
@@ -133,8 +141,8 @@
     "meetPoint": "",
     "meetTime": "",
     "difficulty": "Adventure",
-    "distanceKm": 1400,
-    "route": "Delhi - Chandigarh - Narkanda - Chitkul - Kalpa -  Tabo - Kaza - Losar - Chandra Taal - Sissu - Chandigarh",
+    "distanceKm": 1465,
+    "route": "Delhi → Chandigarh → Narkanda → Chitkul → Kalpa → Tabo → Kaza → Losar → Chandra Taal → Sissu → Chandigarh",
     "summary": "A thrilling adventure through the rugged landscapes of Spiti Valley, exploring ancient monasteries, high-altitude lakes, and breathtaking mountain passes.",
     "highlights": [
       "Golden-hour switchbacks",
@@ -143,7 +151,7 @@
     ],
     "coverImage": "/images/rides/spiti.jpg",
     "gallery": [],
-    "whatsappLink": "https://chat.whatsapp.com/your-invite-code-here",
+    "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
     "instagramHighlight": ""
@@ -159,7 +167,7 @@
     "meetTime": "",
     "difficulty": "Adventure",
     "distanceKm": 3324,
-    "route": "Delhi - Ludhiana - Srinagar - Kargil - Leh - Nubra - Hunder - Pangong - Hanle - UmlingLa - Karu - Jispa - Manali - Kasol - Delhi",
+    "route": "Delhi → Ludhiana → Srinagar → Kargil → Leh → Nubra → Hunder → Pangong → Hanle → UmlingLa → Karu → Jispa → Manali → Kasol → Delhi",
     "summary": "A comprehensive journey through the stunning landscapes of Ladakh, including visits to ancient monasteries, high-altitude lakes, and picturesque mountain passes.",
     "highlights": [
       "Golden-hour switchbacks",
@@ -168,7 +176,7 @@
     ],
     "coverImage": "/images/rides/ladakh_2022.jpg",
     "gallery": [],
-    "whatsappLink": "https://chat.whatsapp.com/your-invite-code-here",
+    "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
     "instagramHighlight": ""

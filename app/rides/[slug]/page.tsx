@@ -142,6 +142,30 @@ export default async function RideDetailPage({ params }: Props) {
         </aside>
       </section>
 
+      {ride.gallery.length > 0 && (
+        <section className="section border-t border-cream/10">
+          <p className="eyebrow">Photos</p>
+          <h2 className="mt-3 text-2xl text-cream">From This Ride</h2>
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {ride.gallery.map((src) => (
+              <div
+                key={src}
+                className="relative aspect-square overflow-hidden bg-charcoal-lighter"
+              >
+                <Image
+                  src={withBasePath(src)}
+                  alt={`${ride.title} photo`}
+                  fill
+                  loading="lazy"
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="section border-t border-cream/10">
         <Link href="/rides" className="btn-secondary">
           &larr; Back to all rides
