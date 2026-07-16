@@ -104,7 +104,7 @@ export default function AboutPage() {
           <p>
             As life moved on and careers began, the rides didn&rsquo;t stop.
             Despite demanding work schedules and different cities, we
-            continued meeting whenever we could, making sure the tradition
+            continued riding whenever we could, making sure the tradition
             stayed alive. In{" "}
             <strong className="font-semibold text-cream">
               October 2019
@@ -166,7 +166,7 @@ export default function AboutPage() {
             riding, and meaningful experiences.
           </p>
           <p>
-            Today, {site.name} is no longer just our story. It&rsquo;s a
+            Today, ALyf2Ride is no longer just our story. It&rsquo;s a
             growing community built on friendship, adventure, and the belief
             that every ride creates memories worth sharing. As we continue
             expanding our community rides from Bengaluru, with Kochi and
@@ -175,8 +175,8 @@ export default function AboutPage() {
           </p>
 
           <p className="border-l-2 border-rust pl-5 text-xl italic text-cream">
-            Because for us, it&rsquo;s never been about the destination.
-            It&rsquo;s about the people, the roads, the stories, and living{" "}
+            Because for us, it&rsquo;s not just about the destination.
+            It&rsquo;s about the ride, the people, the roads, the stories, and living{" "}
             {site.tagline}.
           </p>
         </div>

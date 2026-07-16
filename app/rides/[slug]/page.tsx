@@ -6,15 +6,16 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { getAllRides, getRideBySlug, formatDateRange } from "@/lib/rides";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
   return getAllRides().map((ride) => ({ slug: ride.slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const ride = getRideBySlug(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const ride = getRideBySlug(slug);
   if (!ride) return {};
 
   return {
@@ -28,8 +29,9 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function RideDetailPage({ params }: Props) {
-  const ride = getRideBySlug(params.slug);
+export default async function RideDetailPage({ params }: Props) {
+  const { slug } = await params;
+  const ride = getRideBySlug(slug);
   if (!ride) notFound();
 
   return (
@@ -120,6 +122,17 @@ export default function RideDetailPage({ params }: Props) {
                 <p className="text-xs text-cream-dim">{ride.rsvpNote}</p>
               )}
             </div>
+          )}
+
+          {ride.instagramHighlight && (
+            <a
+              href={ride.instagramHighlight}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-secondary mt-3 w-full"
+            >
+              View Highlights on Instagram
+            </a>
           )}
         </aside>
       </section>

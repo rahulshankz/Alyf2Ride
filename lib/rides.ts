@@ -19,6 +19,7 @@ export type Ride = {
   whatsappLink: string;
   rsvpNote: string;
   priceNote: string;
+  instagramHighlight?: string;
 };
 
 const rides = ridesData as Ride[];

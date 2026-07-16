@@ -12,6 +12,10 @@
 .DS_Store
 *.pem
 
+# raw photo staging area — not served by the site, move files into
+# public/images/{hero,rides,gallery} to publish them
+/public/images/buffer/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

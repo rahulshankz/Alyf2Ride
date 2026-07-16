@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import site from "@/data/site.json";
@@ -18,8 +19,18 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-cream/10 bg-charcoal/90 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link href="/" className="font-heading text-xl tracking-widest text-cream">
-          {site.name}
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/images/logo.jpg"
+            alt={`${site.name} logo`}
+            width={40}
+            height={40}
+            className="h-10 w-10 rounded-full border border-cream/20 object-cover"
+            priority
+          />
+          <span className="font-heading text-xl tracking-widest text-cream">
+            {site.name}
+          </span>
         </Link>
 
         <ul className="hidden items-center gap-8 md:flex">

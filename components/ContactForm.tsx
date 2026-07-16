@@ -1,8 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import site from "@/data/site.json";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/your-form-id";
+// No Formspree account needed: posting directly to /{email} auto-creates
+// the form. The first real submission sends a one-time confirmation email
+// to that address — click it once and the endpoint goes live.
+const FORMSPREE_ENDPOINT = `https://formspree.io/f/mnjejppn`;
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(

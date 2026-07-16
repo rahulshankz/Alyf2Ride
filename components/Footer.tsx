@@ -42,7 +42,7 @@ export default function Footer() {
               rel="noreferrer"
               className="text-cream-dim hover:text-rust"
             >
-              WhatsApp Group
+              WhatsApp Community
             </a>
             <a
               href={`mailto:${site.email}`}
