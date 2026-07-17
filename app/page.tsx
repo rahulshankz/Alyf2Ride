@@ -16,7 +16,8 @@ export default function HomePage() {
       <Hero
         eyebrow="Kochi · Est. 2015"
         title={`${site.name.toUpperCase()}`}
-        subtitle={site.tagline.toUpperCase() + " — " + site.description}
+        tagline={site.tagline.toUpperCase()}
+        subtitle={site.description}
         imageSrc="/images/hero/home-hero.jpg"
         imageAlt="Riders on a misty mountain road at dusk"
       >

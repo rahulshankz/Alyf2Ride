@@ -52,7 +52,7 @@ export default function Navbar() {
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
           aria-expanded={open}
-          className="flex flex-col gap-1.5 md:hidden"
+          className="-mr-2.5 flex flex-col items-center justify-center gap-1.5 p-2.5 md:hidden"
         >
           <span className="h-0.5 w-6 bg-cream" />
           <span className="h-0.5 w-6 bg-cream" />

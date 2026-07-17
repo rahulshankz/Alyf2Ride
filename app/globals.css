@@ -39,4 +39,21 @@
   .card {
     @apply border border-cream/10 bg-charcoal-light;
   }
+
+  /* svh (small viewport height) excludes the mobile browser chrome that
+     vh doesn't, preventing the hero from jumping/reflowing as the
+     address bar collapses on scroll. The vh line is a fallback for
+     browsers that don't support svh — invalid values are ignored, so
+     the second declaration simply overrides the first where supported. */
+  .hero-full {
+    height: 92vh;
+    height: 92svh;
+    min-height: 560px;
+  }
+
+  .hero-tall {
+    height: 60vh;
+    height: 60svh;
+    min-height: 420px;
+  }
 }

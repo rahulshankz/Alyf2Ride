@@ -59,7 +59,7 @@ export default function ContactForm() {
           name="name"
           type="text"
           required
-          className="w-full border border-cream/20 bg-charcoal-light px-4 py-3 text-cream placeholder:text-cream-dim/60 focus:border-rust focus:outline-none"
+          className="w-full border border-cream/20 bg-charcoal-light px-4 py-3 text-base text-cream placeholder:text-cream-dim/60 focus:border-rust focus:outline-none"
           placeholder="Your name"
         />
       </div>
@@ -73,7 +73,7 @@ export default function ContactForm() {
           name="email"
           type="email"
           required
-          className="w-full border border-cream/20 bg-charcoal-light px-4 py-3 text-cream placeholder:text-cream-dim/60 focus:border-rust focus:outline-none"
+          className="w-full border border-cream/20 bg-charcoal-light px-4 py-3 text-base text-cream placeholder:text-cream-dim/60 focus:border-rust focus:outline-none"
           placeholder="you@example.com"
         />
       </div>
@@ -90,7 +90,7 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          className="w-full border border-cream/20 bg-charcoal-light px-4 py-3 text-cream placeholder:text-cream-dim/60 focus:border-rust focus:outline-none"
+          className="w-full border border-cream/20 bg-charcoal-light px-4 py-3 text-base text-cream placeholder:text-cream-dim/60 focus:border-rust focus:outline-none"
           placeholder="Questions, ride ideas, feedback..."
         />
       </div>

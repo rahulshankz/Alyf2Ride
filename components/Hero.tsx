@@ -5,6 +5,7 @@ import { withBasePath } from "@/lib/basePath";
 type HeroProps = {
   eyebrow?: string;
   title: string;
+  tagline?: string;
   subtitle?: string;
   imageSrc: string;
   imageAlt: string;
@@ -15,6 +16,7 @@ type HeroProps = {
 export default function Hero({
   eyebrow,
   title,
+  tagline,
   subtitle,
   imageSrc,
   imageAlt,
@@ -24,7 +26,7 @@ export default function Hero({
   return (
     <section
       className={`relative flex items-end overflow-hidden ${
-        height === "full" ? "h-[92vh] min-h-[560px]" : "h-[60vh] min-h-[420px]"
+        height === "full" ? "hero-full" : "hero-tall"
       }`}
     >
       <Image
@@ -39,11 +41,18 @@ export default function Hero({
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 sm:px-8 sm:pb-20">
         {eyebrow && <p className="eyebrow mb-4">{eyebrow}</p>}
-        <h1 className="max-w-3xl text-5xl leading-[0.95] text-cream sm:text-6xl lg:text-7xl">
+        <h1 className="max-w-3xl text-4xl leading-[0.95] text-cream sm:text-6xl lg:text-7xl">
           {title}
         </h1>
+        {tagline && (
+          <p className="mt-3 max-w-xl font-heading text-base uppercase tracking-widest text-amber sm:text-lg">
+            {tagline}
+          </p>
+        )}
         {subtitle && (
-          <p className="mt-6 max-w-xl text-lg text-cream-dim">{subtitle}</p>
+          <p className="mt-4 line-clamp-5 max-w-xl text-lg text-cream-dim sm:line-clamp-none">
+            {subtitle}
+          </p>
         )}
         {children && <div className="mt-8 flex flex-wrap gap-4">{children}</div>}
       </div>

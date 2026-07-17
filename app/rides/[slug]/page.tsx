@@ -56,7 +56,7 @@ export default async function RideDetailPage({ params }: Props) {
             {ride.status === "upcoming" ? "Upcoming Ride" : "Past Ride"} ·{" "}
             {formatDateRange(ride.startDate, ride.endDate)}
           </p>
-          <h1 className="max-w-3xl text-5xl leading-[0.95] text-cream sm:text-6xl">
+          <h1 className="max-w-3xl text-3xl leading-[1.05] text-cream sm:text-5xl sm:leading-[0.95] lg:text-6xl">
             {ride.title}
           </h1>
         </div>
