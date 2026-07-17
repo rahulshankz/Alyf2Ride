@@ -36,11 +36,12 @@
     "difficulty": "Adventure",
     "distanceKm": 1624,
     "route": "Guwahati → Bomdila → Tawang → BumLa → Zeminthang → Jang → Mago → GokarLa → Tezpur → Guwahati",
-    "summary": "",
+    "summary": "An 11-day expedition into India's far northeast — from Guwahati into the mountains of Arunachal Pradesh, through Bomdila and Tawang to the high-altitude frontier at BumLa, then deeper into the remote villages of Zeminthang, Jang, Mago and GokarLa before looping back via Tezpur. One of our longest and most demanding rides yet.",
     "highlights": [
-      "Golden-hour switchbacks",
-      "Sunrise from the fort viewpoint",
-      "Early morning ride back with the group"
+      "BumLa Pass, on the India-China border",
+      "Tawang Monastery, one of the largest in India",
+      "Remote frontier villages: Zeminthang, Jang, Mago, GokarLa",
+      "1,624 km through Arunachal Pradesh in 11 days"
     ],
     "coverImage": "/images/rides/Tawang-2026.jpg",
     "gallery": [
@@ -68,14 +69,20 @@
     "difficulty": "Easy",
     "distanceKm": 250,
     "route": "Bengaluru → Yelahanka → Pennukonda → Bengaluru",
-    "summary": "An easy half-day loop timed to catch golden hour on the ghat road up Nandi Hills, followed by chai and bench-racing at the top before the ride back under a full moon.",
+    "summary": "A quick half-day loop out of Bengaluru — an early start from Hebbal, a clean run out to Pennukonda and back, and a full tank's worth of open road. No big itinerary, just a reminder of why we ride on weekends.",
     "highlights": [
-      "Golden-hour switchbacks",
-      "Sunrise from the fort viewpoint",
-      "Early morning ride back with the group"
+      "Open highway riding to Pennukonda and back",
+      "Offroad trails near windmills",
+      "A 250 km loop, done in a single morning"
     ],
     "coverImage": "/images/rides/sundowner-circuit-blore-edition.jpg",
-    "gallery": [],
+    "gallery": [
+      "/images/rides/sundowner-circuit-blore-edition-1.jpg",
+      "/images/rides/sundowner-circuit-blore-edition-3.jpg",
+      "/images/rides/sundowner-circuit-blore-edition-4.jpg",
+      "/images/rides/sundowner-circuit-blore-edition-5.jpg",
+      "/images/rides/sundowner-circuit-blore-edition-6.jpg"
+    ],
     "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
@@ -93,11 +100,12 @@
     "difficulty": "Adventure",
     "distanceKm": 1530,
     "route": "Gorakhpur → Kathmandu → Pokhara → Marpha → Jomsom → Mukthinath → Pokhara → Gorakhpur",
-    "summary": "A thrilling adventure through the rugged landscapes of Nepal and Mustang, exploring ancient monasteries, high-altitude lakes, and breathtaking mountain passes.",
+    "summary": "13 days across the Nepal Himalayas — from Gorakhpur into Kathmandu and Pokhara, then into the high-desert terrain of Mustang through Marpha and Jomsom, up to the sacred temple town of Muktinath, before the long ride back.",
     "highlights": [
-      "Golden-hour switchbacks",
-      "Sunrise from the fort viewpoint",
-      "Early morning ride back with the group"
+      "Kathmandu and Pokhara valleys",
+      "The high-desert landscapes of Marpha and Jomsom",
+      "Muktinath, one of the highest Vishnu shrines in the world",
+      "1,530 km across Nepal in 13 days"
     ],
     "coverImage": "/images/rides/nepal.jpg",
     "gallery": [],
@@ -118,18 +126,24 @@
     "difficulty": "Adventure",
     "distanceKm": 2933,
     "route": "Chandigarh → Jispa → Padum → Leh → Pangong → Hanle → UmlingLa → Tso Moriri → Nyoma → Leh → Kargil → Srinagar → Chandigarh",
-    "summary": "",
+    "summary": "Our most ambitious expedition yet — 21 days and nearly 3,000 km through Ladakh and the remote Zanskar valley. From Chandigarh through Jispa into Padum, on to Leh, the blue waters of Pangong and Tso Moriri, the high-altitude plateau of Hanle, and UmlingLa — the world's highest motorable pass — before looping back via Kargil and Srinagar.",
     "highlights": [
-      "Golden-hour switchbacks",
-      "Sunrise from the fort viewpoint",
-      "Early morning ride back with the group"
+      "UmlingLa, the world's highest motorable pass",
+      "The remote Zanskar valley via Padum",
+      "Pangong Tso and Tso Moriri, back to back",
+      "Hanle's high-altitude plateau"
     ],
     "coverImage": "/images/rides/ladakh.jpg",
-    "gallery": [],
+    "gallery": [
+      "/images/rides/ladakh-1.jpg",
+      "/images/rides/ladakh-2.jpg",
+      "/images/rides/ladakh-3.jpg",
+      "/images/rides/ladakh-4.jpg"
+    ],
     "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
-    "instagramHighlight": ""
+    "instagramHighlight": "https://www.instagram.com/stories/highlights/18326448298194218/"
   },
   {
     "slug": "spiti-circuit-2023",
@@ -143,18 +157,34 @@
     "difficulty": "Adventure",
     "distanceKm": 1465,
     "route": "Delhi → Chandigarh → Narkanda → Chitkul → Kalpa → Tabo → Kaza → Losar → Chandra Taal → Sissu → Chandigarh",
-    "summary": "A thrilling adventure through the rugged landscapes of Spiti Valley, exploring ancient monasteries, high-altitude lakes, and breathtaking mountain passes.",
+    "summary": "12 days through the cold desert of Spiti Valley — via Chitkul, India's last inhabited village toward the Indo-Tibet border, the thousand-year-old monastery at Tabo, and the high-altitude town of Kaza, before crossing over to the turquoise waters of Chandra Taal.",
     "highlights": [
-      "Golden-hour switchbacks",
-      "Sunrise from the fort viewpoint",
-      "Early morning ride back with the group"
+      "Chitkul, the last village toward the Indo-Tibet border",
+      "Losar, a remote and beautiful high-altitude village in Spiti Valley",
+      "Chotta Dhara, river crossing and off-road sections from Chandra Taal to Sissu",
+      "Kaza, Spiti's high-altitude headquarters"
     ],
     "coverImage": "/images/rides/spiti.jpg",
-    "gallery": [],
+    "gallery": [
+      "/images/rides/spiti-1.jpg",
+      "/images/rides/spiti-2.jpg",
+      "/images/rides/spiti-3.jpg",
+      "/images/rides/spiti-4.jpg",
+      "/images/rides/spiti-5.jpg",
+      "/images/rides/spiti-6.jpg",
+      "/images/rides/spiti-7.jpg",
+      "/images/rides/spiti-8.jpg",
+      "/images/rides/spiti-9.jpg",
+      "/images/rides/spiti-10.jpg",
+      "/images/rides/spiti-11.jpg",
+      "/images/rides/spiti-12.jpg",
+      "/images/rides/spiti-13.jpg",
+      "/images/rides/spiti-14.jpg"
+    ],
     "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
-    "instagramHighlight": ""
+    "instagramHighlight": "https://www.instagram.com/stories/highlights/18021066652587814/"
   },
   {
     "slug": "ladakh-full-curcuit-2022",
@@ -168,17 +198,32 @@
     "difficulty": "Adventure",
     "distanceKm": 3324,
     "route": "Delhi → Ludhiana → Srinagar → Kargil → Leh → Nubra → Hunder → Pangong → Hanle → UmlingLa → Karu → Jispa → Manali → Kasol → Delhi",
-    "summary": "A comprehensive journey through the stunning landscapes of Ladakh, including visits to ancient monasteries, high-altitude lakes, and picturesque mountain passes.",
+    "summary": "The ride that started it all — 25 days and over 3,300 km through Ladakh via Srinagar and Kargil, into the sand dunes of Nubra and Hunder, along Pangong and Hanle to UmlingLa, and home via Manali and Kasol. The expedition that launched ALyf2Ride as a community.",
     "highlights": [
-      "Golden-hour switchbacks",
-      "Sunrise from the fort viewpoint",
-      "Early morning ride back with the group"
+      "Nubra Valley and the sand dunes at Hunder",
+      "Pangong Tso and the remote Hanle plateau",
+      "UmlingLa, the world's highest motorable pass",
+      "The expedition that officially launched ALyf2Ride"
     ],
     "coverImage": "/images/rides/ladakh_2022.jpg",
-    "gallery": [],
+    "gallery": [
+      "/images/rides/ladakh-2022_1.jpg",
+      "/images/rides/ladakh-2022_2.jpg",
+      "/images/rides/ladakh-2022_3.jpg",
+      "/images/rides/ladakh-2022_4.jpg",
+      "/images/rides/ladakh-2022_5.jpg",
+      "/images/rides/ladakh-2022_6.jpg",
+      "/images/rides/ladakh-2022_7.jpg",
+      "/images/rides/ladakh-2022_8.jpg",
+      "/images/rides/ladakh-2022_9.jpg",
+      "/images/rides/ladakh-2022_10.jpg",
+      "/images/rides/ladakh-2022_11.jpg",
+      "/images/rides/ladakh-2022_12.jpg",
+      "/images/rides/ladakh-2022_13.jpg"
+    ],
     "whatsappLink": "",
     "rsvpNote": "",
     "priceNote": "",
-    "instagramHighlight": ""
+    "instagramHighlight": "https://www.instagram.com/stories/highlights/17945167144852348/"
   }
 ]

@@ -98,14 +98,18 @@ export default async function RideDetailPage({ params }: Props) {
               <dt className="text-cream-dim">Location</dt>
               <dd className="text-right text-cream">{ride.location}</dd>
             </div>
-            <div className="flex justify-between gap-4 border-b border-cream/10 pb-3">
-              <dt className="text-cream-dim">Meet Point</dt>
-              <dd className="text-right text-cream">{ride.meetPoint}</dd>
-            </div>
-            <div className="flex justify-between gap-4 border-b border-cream/10 pb-3">
-              <dt className="text-cream-dim">Meet Time</dt>
-              <dd className="text-right text-cream">{ride.meetTime}</dd>
-            </div>
+            {ride.status === "upcoming" && (
+              <>
+                <div className="flex justify-between gap-4 border-b border-cream/10 pb-3">
+                  <dt className="text-cream-dim">Meet Point</dt>
+                  <dd className="text-right text-cream">{ride.meetPoint}</dd>
+                </div>
+                <div className="flex justify-between gap-4 border-b border-cream/10 pb-3">
+                  <dt className="text-cream-dim">Meet Time</dt>
+                  <dd className="text-right text-cream">{ride.meetTime}</dd>
+                </div>
+              </>
+            )}
             <div className="flex justify-between gap-4 border-b border-cream/10 pb-3">
               <dt className="text-cream-dim">Difficulty</dt>
               <dd className="text-right text-cream">{ride.difficulty}</dd>
