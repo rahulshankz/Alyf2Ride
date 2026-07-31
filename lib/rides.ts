@@ -46,6 +46,16 @@ export function getRideBySlug(slug: string): Ride | undefined {
   return rides.find((ride) => ride.slug === slug);
 }
 
+export function getRideDurationDays(ride: Ride): number {
+  const start = new Date(ride.startDate);
+  const end = new Date(ride.endDate);
+  return Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) + 1;
+}
+
+export function isLongRide(ride: Ride): boolean {
+  return getRideDurationDays(ride) > 5;
+}
+
 export function formatDateRange(startDate: string, endDate: string): string {
   const start = new Date(startDate);
   const end = new Date(endDate);

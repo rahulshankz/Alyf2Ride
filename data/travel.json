@@ -1,0 +1,95 @@
+[
+  {
+    "slug": "Kudremukh-trek",
+    "title": "Kudremukh Trek",
+    "type": "Trek",
+    "status": "past",
+    "startDate": "2025-07-17",
+    "endDate": "2025-07-18",
+    "location": "Mullodi, Karnataka",
+    "meetPoint": "",
+    "meetTime": "",
+    "itinerary": "Mullodi base village → rolling grassland ridges → Kadambi Falls detour → overnight camp → summit ridge near Kudremukh peak → descend to Mullodi.",
+    "summary": "A two-day monsoon trek through the Kudremukh range — open grassland ridges, shola forest, a detour to Kadambi Falls, and a night camped out under open sky before the climb to the summit ridge.",
+    "highlights": [
+      "Rolling grassland ridges of the Kudremukh range",
+      "Detour to Kadambi Falls",
+      "Overnight camping in the open",
+      "Panoramic views from the summit ridge"
+    ],
+    "coverImage": "/images/gallery/01.jpeg",
+    "gallery": [
+      "/images/gallery/02.jpeg",
+      "/images/gallery/03.jpeg",
+      "/images/gallery/04.jpeg"
+    ],
+    "whatsappLink": "https://wa.me/918089213090",
+    "rsvpNote": "",
+    "priceNote": "Placeholder — contribution details go here.",
+    "instagramHighlight": "https://instagram.com/alyf2ride"
+  },
+  {
+    "slug": "Cordelia-cruise",
+    "title": "Cordelia Cruise : Mumbai to Kochi",
+    "type": "Cruise",
+    "status": "past",
+    "startDate": "2025-04-20",
+    "endDate": "2025-04-22",
+    "location": "Mumbai to Kochi",
+    "meetPoint": "",
+    "meetTime": "",
+    "itinerary": "Mumbai (Ballard Pier cruise terminal) → a full day at sea → arrival into Kochi.",
+    "summary": "A two-night crossing aboard the Cordelia from Mumbai to Kochi — a full day at sea with onboard shows and a pool deck, ending with a slow sail into the Kochi backwaters.",
+    "highlights": [
+      "Sail-away from Mumbai's Ballard Pier",
+      "A full day at sea with deck pool and live shows",
+      "Sunset views from the top deck",
+      "Sailing into Kochi by sea"
+    ],
+    "coverImage": "/images/gallery/06.jpeg",
+    "gallery": [
+      "/images/gallery/07.jpeg",
+      "/images/gallery/08.jpeg",
+      "/images/gallery/09.jpeg"
+    ],
+    "whatsappLink": "https://wa.me/918089213090",
+    "rsvpNote": "",
+    "priceNote": "Placeholder — contribution details go here.",
+    "instagramHighlight": "https://instagram.com/alyf2ride"
+  },
+  {
+    "slug": "netharavathi-trek",
+    "title": "Netharavathi Trek",
+    "type": "Trek",
+    "status": "past",
+    "startDate": "2026-07-19",
+    "endDate": "2026-07-19",
+    "location": "Samse, Karnataka",
+    "meetPoint": "",
+    "meetTime": "",
+    "itinerary": "Samse village → forest trail along the Netravathi river → boulder-hopping river crossings → Bhagavathi/Kumaraparvatha ridge viewpoint → back to Samse.",
+    "summary": "A one-day trek through dense Western Ghats forest and repeated river crossings along the Netravathi, starting from Samse near Kukke Subramanya. Slippery rocks, cold water, and thick monsoon greenery the whole way.",
+    "highlights": [
+      "Multiple river crossings along the Netravathi",
+      "Dense shola forest and monsoon greenery underfoot",
+      "Rope-assisted crossings over slippery boulders",
+      "Ridge-top views of the Kumaraparvatha range"
+    ],
+    "coverImage": "/images/rides/nethravati-9.jpg",
+    "gallery": [
+      "/images/rides/nethravati-1.jpg",
+      "/images/rides/nethravati-2.jpg",
+      "/images/rides/nethravati-3.jpg",
+      "/images/rides/nethravati-4.jpg",
+      "/images/rides/nethravati-5.jpg",
+      "/images/rides/nethravati-6.jpg",
+      "/images/rides/nethravati-7.jpg",
+      "/images/rides/nethravati-8.jpg",
+      "/images/rides/nethravati-9.jpg"
+    ],
+    "whatsappLink": "https://wa.me/918089213090",
+    "rsvpNote": "",
+    "priceNote": "Placeholder — contribution details go here.",
+    "instagramHighlight": "https://instagram.com/alyf2ride"
+  }
+]

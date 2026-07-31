@@ -9,6 +9,7 @@ import site from "@/data/site.json";
 const NAV_LINKS = [
   { href: "/about", label: "About" },
   { href: "/rides", label: "Rides" },
+  { href: "/travel", label: "Travel" },
   { href: "/gallery", label: "Gallery" },
   { href: "/join", label: "Join Us" },
   { href: "/contact", label: "Contact" },

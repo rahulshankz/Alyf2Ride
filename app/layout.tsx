@@ -3,6 +3,7 @@ import { Oswald, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Analytics from "@/components/Analytics";
 import { withBasePath } from "@/lib/basePath";
 import site from "@/data/site.json";
 
@@ -57,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${oswald.variable} ${inter.variable}`}>
       <body>
+        <Analytics />
         <Navbar />
         <main className="pt-[73px]">{children}</main>
         <Footer />

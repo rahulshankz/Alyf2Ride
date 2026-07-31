@@ -18,6 +18,9 @@ export default function Footer() {
             <Link href="/rides" className="text-cream-dim hover:text-rust">
               Rides &amp; Events
             </Link>
+            <Link href="/travel" className="text-cream-dim hover:text-rust">
+              Travel &amp; Beyond
+            </Link>
             <Link href="/gallery" className="text-cream-dim hover:text-rust">
               Gallery
             </Link>
@@ -45,6 +48,14 @@ export default function Footer() {
               WhatsApp Community
             </a>
             <a
+              href={site.youtube.url}
+              target="_blank"
+              rel="noreferrer"
+              className="text-cream-dim hover:text-rust"
+            >
+              YouTube {site.youtube.handle}
+            </a>
+            <a
               href={`mailto:${site.email}`}
               className="text-cream-dim hover:text-rust"
             >
@@ -58,9 +69,14 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {site.name}. Ride safe, ride
             together.
           </p>
-          <p>
-            Based out of {site.baseCity}, riding since {site.founded}.
-          </p>
+          <div className="flex items-center gap-4">
+            <p>
+              Based out of {site.baseCity}, riding since {site.founded}.
+            </p>
+            <Link href="/privacy" className="hover:text-rust">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

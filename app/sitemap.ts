@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllRides } from "@/lib/rides";
+import { getAllTrips } from "@/lib/travel";
 import site from "@/data/site.json";
 
 export const dynamic = "force-static";
@@ -9,9 +10,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/about",
     "/rides",
+    "/travel",
     "/gallery",
     "/join",
     "/contact",
+    "/privacy",
   ].map((path) => ({
     url: `${site.url}${path}`,
     lastModified: new Date(),
@@ -22,5 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(ride.startDate),
   }));
 
-  return [...staticRoutes, ...rideRoutes];
+  const tripRoutes = getAllTrips().map((trip) => ({
+    url: `${site.url}/travel/${trip.slug}`,
+    lastModified: new Date(trip.startDate),
+  }));
+
+  return [...staticRoutes, ...rideRoutes, ...tripRoutes];
 }

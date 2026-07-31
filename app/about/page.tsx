@@ -137,13 +137,11 @@ export default function AboutPage() {
             the Himalayas, completing rides across:
           </p>
 
-          <ul className="flex flex-wrap gap-3 py-1">
+          <ul className="space-y-2 py-1">
             {["Ladakh", "Spiti Valley", "Zanskar", "Nepal", "Tawang"].map(
               (place) => (
-                <li
-                  key={place}
-                  className="border border-cream/10 bg-charcoal-light px-4 py-2 text-sm text-cream"
-                >
+                <li key={place} className="flex gap-3 text-cream-dim">
+                  <span className="text-rust">—</span>
                   {place}
                 </li>
               )

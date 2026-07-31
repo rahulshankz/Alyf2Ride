@@ -11,6 +11,8 @@ type HeroProps = {
   imageAlt: string;
   children?: ReactNode;
   height?: "full" | "tall";
+  imagePosition?: "center" | "top" | "bottom";
+  overlay?: "normal" | "light";
 };
 
 export default function Hero({
@@ -22,6 +24,8 @@ export default function Hero({
   imageAlt,
   children,
   height = "full",
+  imagePosition = "center",
+  overlay = "normal",
 }: HeroProps) {
   return (
     <section
@@ -35,9 +39,21 @@ export default function Hero({
         fill
         priority
         sizes="100vw"
-        className="object-cover"
+        className={`object-cover ${
+          imagePosition === "top"
+            ? "object-top"
+            : imagePosition === "bottom"
+              ? "object-bottom"
+              : "object-center"
+        }`}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-charcoal/20" />
+      <div
+        className={`absolute inset-0 bg-gradient-to-t ${
+          overlay === "light"
+            ? "from-charcoal/70 via-charcoal/20 to-transparent"
+            : "from-charcoal via-charcoal/40 to-charcoal/20"
+        }`}
+      />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 sm:px-8 sm:pb-20">
         {eyebrow && <p className="eyebrow mb-4">{eyebrow}</p>}
