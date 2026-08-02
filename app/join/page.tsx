@@ -39,7 +39,9 @@ export default function JoinPage() {
         subtitle="Here's exactly how to become part of the community and what we expect from every rider on the road."
         imageSrc="/images/hero/join-hero.jpg"
         imageAlt="Group of riders gathered before a ride start"
-        height="tall"
+        height="full"
+        textPosition="top"
+        childrenPosition="bottom"
       >
         <WhatsAppButton href={site.whatsapp.communityLink} />
       </Hero>

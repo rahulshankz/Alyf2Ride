@@ -39,8 +39,9 @@ export default function AboutPage() {
         eyebrow="About Us"
         title="Every Ride Tells A Story"
         imageSrc="/images/hero/about-hero.jpg"
-        imageAlt="Rider looking out over a valley at dawn"
+        imageAlt="Riders posing with their motorcycles against the Ladakh mountains"
         height="tall"
+        textPosition="below"
       />
 
       <section className="section">

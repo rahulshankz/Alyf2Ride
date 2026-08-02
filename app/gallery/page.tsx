@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
+import GalleryGrid from "@/components/GalleryGrid";
 import { getGalleryImages } from "@/lib/gallery";
 import site from "@/data/site.json";
 
@@ -21,26 +21,11 @@ export default function GalleryPage() {
         imageSrc="/images/hero/gallery-hero.jpg"
         imageAlt="Wide shot of riders on an open highway"
         height="tall"
+        textPosition="top"
       />
 
       <section className="section">
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          {gallery.map((item, index) => (
-            <div
-              key={item.src}
-              className="group relative aspect-square overflow-hidden bg-charcoal-lighter"
-            >
-              <Image
-                src={item.src}
-                alt={item.alt}
-                fill
-                loading={index < 4 ? "eager" : "lazy"}
-                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-          ))}
-        </div>
+        <GalleryGrid images={gallery} />
 
         {gallery.length === 0 && (
           <p className="text-cream-dim">

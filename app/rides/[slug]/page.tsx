@@ -114,6 +114,12 @@ export default async function RideDetailPage({ params }: Props) {
               <dt className="text-cream-dim">Difficulty</dt>
               <dd className="text-right text-cream">{ride.difficulty}</dd>
             </div>
+            {ride.type && (
+              <div className="flex justify-between gap-4 border-b border-cream/10 pb-3">
+                <dt className="text-cream-dim">Type</dt>
+                <dd className="text-right text-cream">{ride.type}</dd>
+              </div>
+            )}
             <div className="flex justify-between gap-4 pb-1">
               <dt className="text-cream-dim">Distance</dt>
               <dd className="text-right text-cream">{ride.distanceKm} km</dd>

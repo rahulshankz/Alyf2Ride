@@ -4,24 +4,26 @@
     "title": "Kudremukh Trek",
     "type": "Trek",
     "status": "past",
-    "startDate": "2025-07-17",
-    "endDate": "2025-07-18",
+    "startDate": "2025-07-18",
+    "endDate": "2025-07-19",
     "location": "Mullodi, Karnataka",
     "meetPoint": "",
     "meetTime": "",
-    "itinerary": "Mullodi base village → rolling grassland ridges → Kadambi Falls detour → overnight camp → summit ridge near Kudremukh peak → descend to Mullodi.",
-    "summary": "A two-day monsoon trek through the Kudremukh range — open grassland ridges, shola forest, a detour to Kadambi Falls, and a night camped out under open sky before the climb to the summit ridge.",
+    "itinerary": "Day 1: Mullodi base village → Kudremukh trek. Day 2: exploring nearby places around Mullodi.",
+    "summary": "A two-day monsoon trip based out of Mullodi — a day trekking the Kudremukh range, followed by a second day exploring a few other spots nearby.",
     "highlights": [
-      "Rolling grassland ridges of the Kudremukh range",
-      "Detour to Kadambi Falls",
-      "Overnight camping in the open",
-      "Panoramic views from the summit ridge"
+      "A day trek through the Kudremukh range",
+      "A second day exploring nearby places around Mullodi"
     ],
-    "coverImage": "/images/gallery/01.jpeg",
+    "coverImage": "/images/rides/kudremukh-trek_1.jpg",
     "gallery": [
-      "/images/gallery/02.jpeg",
-      "/images/gallery/03.jpeg",
-      "/images/gallery/04.jpeg"
+      "/images/rides/kudremukh-trek_1.jpg",
+      "/images/rides/kudremukh-trek_2.jpg",
+      "/images/rides/kudremukh-trek_3.jpg",
+      "/images/rides/kudremukh-trek_4.jpg",
+      "/images/rides/kudremukh-trek_5.jpg",
+      "/images/rides/kudremukh-trek_6.jpg",
+      "/images/rides/kudremukh-trek_7.jpg"
     ],
     "whatsappLink": "https://wa.me/918089213090",
     "rsvpNote": "",

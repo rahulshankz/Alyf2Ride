@@ -10,6 +10,7 @@ export type Ride = {
   meetPoint: string;
   meetTime: string;
   difficulty: string;
+  type?: string;
   distanceKm: number;
   route: string;
   summary: string;

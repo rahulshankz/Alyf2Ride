@@ -41,6 +41,7 @@ export default function RideCard({ ride }: { ride: Ride }) {
         </p>
         <div className="mt-4 flex gap-4 text-xs uppercase tracking-wider text-cream-dim">
           <span>{ride.difficulty}</span>
+          {ride.type && <span>{ride.type}</span>}
           <span>{ride.distanceKm} km</span>
         </div>
       </div>

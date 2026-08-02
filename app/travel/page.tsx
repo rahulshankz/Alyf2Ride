@@ -18,11 +18,10 @@ export default function TravelPage() {
         eyebrow="Beyond Two Wheels"
         title="Travel & Beyond"
         subtitle="From mountain treks to coastal cruises and cross-country road trips — every trip is logged here, route and how to join. Scroll down for the archive."
-        imageSrc="/images/hero/rides-hero.jpg"
-        imageAlt="A scenic mountain road with riders in the distance"
+        imageSrc="/images/hero/group-story2.jpg"
+        imageAlt="Group photo of riders posing with their cars on a misty mountain road"
         height="tall"
-        imagePosition="bottom"
-        overlay="light"
+        textInset="tight"
       />
 
       <section className="section">

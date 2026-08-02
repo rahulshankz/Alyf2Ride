@@ -17,8 +17,9 @@ export default function ContactPage() {
         title="Get In Touch"
         subtitle="Questions about a ride, ideas for a route, or just want to say hi — reach us here."
         imageSrc="/images/hero/contact-hero.jpg"
-        imageAlt="Motorcycle parked at dusk on an open road"
+        imageAlt="Riders posing with their motorcycles in the mountains"
         height="tall"
+        textPosition="top"
       />
 
       <section className="section grid gap-16 lg:grid-cols-2">

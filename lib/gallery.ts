@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
-import { withBasePath } from "@/lib/basePath";
+import { getAllRides } from "@/lib/rides";
+import { getAllTrips } from "@/lib/travel";
 
 const GALLERY_DIR = path.join(process.cwd(), "public/images/gallery");
 const VALID_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp"]);
@@ -8,6 +9,8 @@ const VALID_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp"]);
 export type GalleryImage = {
   src: string;
   alt: string;
+  label: string;
+  href?: string;
 };
 
 function toAltText(filename: string): string {
@@ -22,7 +25,7 @@ function toAltText(filename: string): string {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-export function getGalleryImages(): GalleryImage[] {
+function getUnaffiliatedImages(): GalleryImage[] {
   let files: string[] = [];
   try {
     files = fs.readdirSync(GALLERY_DIR);
@@ -34,7 +37,60 @@ export function getGalleryImages(): GalleryImage[] {
     .filter((file) => VALID_EXTENSIONS.has(path.extname(file).toLowerCase()))
     .sort()
     .map((file) => ({
-      src: withBasePath(`/images/gallery/${encodeURIComponent(file)}`),
+      src: `/images/gallery/${encodeURIComponent(file)}`,
       alt: toAltText(file),
+      label: "ALyf2Ride",
     }));
+}
+
+// A small deterministic hash so the shuffle order is stable across server
+// and client renders (avoids hydration mismatches) without grouping images
+// by ride/trip/folder the way source order would.
+function hashString(value: string): number {
+  let hash = 0;
+  for (let i = 0; i < value.length; i++) {
+    hash = (hash << 5) - hash + value.charCodeAt(i);
+    hash |= 0;
+  }
+  return hash;
+}
+
+function seededShuffle(images: GalleryImage[]): GalleryImage[] {
+  return images
+    .map((image) => ({ image, sortKey: hashString(image.src) }))
+    .sort((a, b) => a.sortKey - b.sortKey)
+    .map(({ image }) => image);
+}
+
+export function getGalleryImages(): GalleryImage[] {
+  const rideImages: GalleryImage[] = getAllRides().flatMap((ride) => {
+    const sources = [ride.coverImage, ...ride.gallery].filter(Boolean);
+    return sources.map((src) => ({
+      src,
+      alt: `${ride.title} — ride photo`,
+      label: ride.title,
+      href: `/rides/${ride.slug}`,
+    }));
+  });
+
+  const tripImages: GalleryImage[] = getAllTrips().flatMap((trip) => {
+    const sources = [trip.coverImage, ...trip.gallery].filter(Boolean);
+    return sources.map((src) => ({
+      src,
+      alt: `${trip.title} — trip photo`,
+      label: trip.title,
+      href: `/travel/${trip.slug}`,
+    }));
+  });
+
+  const seen = new Set<string>();
+  const deduped = [...rideImages, ...tripImages, ...getUnaffiliatedImages()].filter(
+    (image) => {
+      if (seen.has(image.src)) return false;
+      seen.add(image.src);
+      return true;
+    }
+  );
+
+  return seededShuffle(deduped);
 }

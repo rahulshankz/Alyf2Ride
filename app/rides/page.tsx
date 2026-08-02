@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Hero from "@/components/Hero";
 import RideCard from "@/components/RideCard";
 import { getUpcomingRides, getPastRides, isLongRide, type Ride } from "@/lib/rides";
@@ -42,10 +43,10 @@ export default function RidesPage() {
         title="Where We're Headed"
         subtitle="Every ride is logged here — route, difficulty, and how to join. Scroll down for the archive."
         imageSrc="/images/hero/rides-hero.jpg"
-        imageAlt="Motorcycles parked on a ghat road overlooking the valley"
+        imageAlt="Rider splashing through a river crossing on a mud trail"
         height="tall"
         imagePosition="bottom"
-        overlay="light"
+        textInset="tight"
       />
 
       <section className="section">
@@ -79,6 +80,14 @@ export default function RidesPage() {
             No past rides logged yet — this is where the archive will grow.
           </p>
         )}
+
+        <p className="mt-12 border-t border-cream/10 pt-8 text-sm text-cream-dim">
+          Plus plenty of shorter rides that don't get their own page — see
+          the{" "}
+          <Link href="/rides/archive" className="text-rust hover:text-rust-light">
+            full ride logbook →
+          </Link>
+        </p>
       </section>
     </>
   );
