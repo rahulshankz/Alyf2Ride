@@ -16,6 +16,15 @@ export type Ride = {
   summary: string;
   highlights: string[];
   coverImage: string;
+  // Vertical crop anchor for coverImage when it's cropped into a landscape
+  // box (card grids, detail-page hero) — matters for portrait source photos
+  // where a center crop would cut off the subject. Defaults to "center".
+  coverPosition?: "top" | "center" | "bottom";
+  // "portrait" gives the card a taller aspect ratio box for coverImage
+  // instead of the default landscape one — use for portrait-orientation
+  // source photos, where forcing a landscape crop would discard most of
+  // the image. Defaults to landscape.
+  coverAspect?: "landscape" | "portrait";
   gallery: string[];
   whatsappLink: string;
   rsvpNote: string;

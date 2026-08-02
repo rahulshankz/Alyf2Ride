@@ -10,13 +10,23 @@ export default function TravelCard({ trip }: { trip: Trip }) {
       href={`/travel/${trip.slug}`}
       className="card group block overflow-hidden transition-colors hover:border-rust/50"
     >
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-charcoal-lighter">
+      <div
+        className={`relative w-full overflow-hidden bg-charcoal-lighter ${
+          trip.coverAspect === "portrait" ? "aspect-[3/4]" : "aspect-[4/3]"
+        }`}
+      >
         <Image
           src={withBasePath(trip.coverImage)}
           alt={trip.title}
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className={`object-cover transition-transform duration-500 group-hover:scale-105 ${
+            trip.coverPosition === "top"
+              ? "object-top"
+              : trip.coverPosition === "bottom"
+                ? "object-bottom"
+                : "object-center"
+          }`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/10 to-transparent" />
         <span

@@ -14,6 +14,8 @@ export type Trip = {
   summary: string;
   highlights: string[];
   coverImage: string;
+  coverPosition?: "top" | "center" | "bottom";
+  coverAspect?: "landscape" | "portrait";
   gallery: string[];
   whatsappLink: string;
   rsvpNote: string;

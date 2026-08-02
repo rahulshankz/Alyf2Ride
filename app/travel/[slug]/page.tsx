@@ -46,7 +46,13 @@ export default async function TravelDetailPage({ params }: Props) {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className={`object-cover ${
+            trip.coverPosition === "top"
+              ? "object-top"
+              : trip.coverPosition === "bottom"
+                ? "object-bottom"
+                : "object-center"
+          }`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-charcoal/10" />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-14 sm:px-8">
