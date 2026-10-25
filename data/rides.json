@@ -1,5 +1,37 @@
 [
   {
+    "slug": "rann-of-kutch-2026",
+    "title": "Rann of Kutch",
+    "status": "upcoming",
+    "startDate": "2026-11-22",
+    "endDate": "2026-11-30",
+    "location": "Kutch, Gujarat",
+    "meetPoint": "Ahmedabad",
+    "meetTime": "06:00 AM",
+    "difficulty": "Adventure",
+    "distanceKm": 1400,
+    "route": "Ahmedabad → Little Rann → Dholavira → Dhordo → White Rann → Kalo Dungar → Bhuj → Mandvi → Ahmedabad",
+    "summary": "Nine days across the salt desert, remote villages and vast open skies of Kutch. From sunrise and sunset on the White Rann to heritage stops in Bhuj and the coast at Mandvi, this ride blends desert landscapes, road miles, and a laid-back slow-travel rhythm.",
+    "highlights": [
+      "White Rann sunrise and sunset views",
+      "Rann Utsav celebrations in the salt desert",
+      "Full moon nights at Kutch under the open sky",
+      "Road to Heaven through the salt desert",
+      "Bhuj and the cultural heart of Kutch",
+      "Salt flats, desert roads, and coastal detours",
+      "A 9-day Gujarat adventure"
+    ],
+    "coverImage": "/images/rides/RoadtoHeaven.jpg",
+    "coverAspect": "landscape",
+    "gallery": [
+      "/images/rides/RoadtoHeaven.jpg"
+    ],
+    "whatsappLink": "",
+    "rsvpNote": "",
+    "priceNote": "",
+    "instagramHighlight": ""
+  },
+  {
     "slug": "Monsoon-Trails-Idukki-2026",
     "title": "Monsoon Trails — Idukki",
     "status": "past",
